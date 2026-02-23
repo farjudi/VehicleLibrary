@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="consoleApp/ConsoleApp.csproj" />
+  <Project Path="VehicleLibrary/VehicleLibrary.csproj" />
+</Solution>
