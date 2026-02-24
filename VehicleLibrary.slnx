@@ -1,4 +1,12 @@
 <Solution>
+  <Folder Name="/Test/">
+    <Project Path="VehicleLibrary.Tests/VehicleLibrary.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Test/EntityTests/">
+    <File Path="CarTests.cs" />
+    <File Path="MotorcycleTests.cs" />
+    <File Path="VanTests.cs" />
+  </Folder>
   <Project Path="consoleApp/ConsoleApp.csproj" />
   <Project Path="VehicleLibrary/VehicleLibrary.csproj" />
 </Solution>

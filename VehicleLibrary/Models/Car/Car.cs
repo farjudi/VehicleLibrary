@@ -15,6 +15,8 @@ namespace VehicleLibrary.Models.Car
         public Car(int capacity, double weight, string plateNumber) : base(capacity, weight, plateNumber) { }
         public override void DisplayInfo()
         {
+         
+
             Console.WriteLine($"Car | Capacity: {Capacity} | Weight: {Weight} | Plate: {PlateNumber}");
 
         }

@@ -16,6 +16,17 @@ namespace VehicleLibrary.Entity
         public string PlateNumber { get; protected set; }
         protected BaseVehicle(int capacity, double weight, string plateNumber)
         {
+            if (capacity <= 0)
+                throw new ArgumentException("Capacity must be greater than zero");
+
+            if (weight <= 0)
+                throw new ArgumentException("Weight must be greater than zero");
+
+            if (string.IsNullOrWhiteSpace(plateNumber))
+                throw new ArgumentException("PlateNumber is required");
+
+
+
             Capacity = capacity;
             Weight = weight;
             PlateNumber = plateNumber;
