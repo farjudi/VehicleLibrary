@@ -3,5 +3,6 @@
     <Project Path="VehicleLibrary.Tests/VehicleLibrary.Tests.csproj" />
   </Folder>
   <Project Path="consoleApp/ConsoleApp.csproj" />
+  <Project Path="VehicleEcosystem/VehicleEcosystem.csproj" />
   <Project Path="VehicleLibrary/VehicleLibrary.csproj" />
 </Solution>

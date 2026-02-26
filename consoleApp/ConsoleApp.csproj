@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\VehicleEcosystem\VehicleEcosystem.csproj" />
     <ProjectReference Include="..\VehicleLibrary\VehicleLibrary.csproj" />
   </ItemGroup>
 

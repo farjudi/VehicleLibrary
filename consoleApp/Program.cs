@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using VehicleEcosystem;
+using VehicleEcosystem.Families.Electric;
 using VehicleLibrary.Enum;
 using VehicleLibrary.Factory;
 
@@ -15,6 +17,22 @@ class program
         truck.DisplayInfo();
         van.DisplayInfo();
         motorcycle.DisplayInfo();
+
+
+
+
+
+        Console.WriteLine("------------");
+        var factory1 = new ElectricVehicleFactory();
+
+        var fleetBuilder = new FleetBuilder(factory1);
+
+        var fleet = fleetBuilder.BuildFleet();
+
+        foreach (var vehicle in fleet)
+        {
+            Console.WriteLine(vehicle.DisplayInfo());
+        }
 
     }
 }
