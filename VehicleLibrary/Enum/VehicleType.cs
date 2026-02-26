@@ -10,5 +10,6 @@ public enum VehicleType
 {
     Car,
     Van,
-    Motorcycle
+    Motorcycle,
+    Truck
 }

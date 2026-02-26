@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using VehicleLibrary.Enum;
 using VehicleLibrary.Models.Car;
 using VehicleLibrary.Models.Motorcycle;
+using VehicleLibrary.Models.truck;
 using VehicleLibrary.Models.Van;
 
 namespace VehicleLibrary.Factory
@@ -19,6 +20,7 @@ namespace VehicleLibrary.Factory
                 VehicleType.Car => new Car(capacity, weight, plateNumber),
                 VehicleType.Van => new Van(capacity, weight, plateNumber),
                 VehicleType.Motorcycle => new Motorcycle(capacity, weight, plateNumber),
+                VehicleType.Truck => new Truck(capacity, weight, plateNumber),
                 _ => throw new ArgumentException("Invalid vehicle type")
 
             };
